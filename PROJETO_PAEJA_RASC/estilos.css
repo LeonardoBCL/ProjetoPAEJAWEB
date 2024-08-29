@@ -1,0 +1,69 @@
+body {
+    background-color: #DFECFF;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    margin-top: 40px; /*Dimensões da barra */
+    margin-left: 160px; /*Dimensões da barra */
+    margin-right: 160px; /*Dimensões da barra */
+    display: flex; /* Utiliza flexbox para alinhamento */
+    justify-content: space-between; /* Espaça os itens igualmente entre os extremos */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    padding: 10px 20px; /* Espaçamento interno da barra */
+    background-color: #BAD8FF /* Cor da barra de
+     navegação */
+
+}
+
+.nav-menu ul {
+    display: flex; /* Exibe itens de lista em linha */
+    list-style-type: none; /* Remove marcadores dos itens da lista */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    justify-content: center; /* Centraliza os itens horizontalmente dentro da nav-menu */
+    margin-left: 37px; 
+}
+
+.nav-menu a{
+
+    color: #17365D ; /* Cor do texto dos links na navegação */
+    text-decoration: none; /*Remove sublinhado */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+/* Estilo dos links de entrada e registro */
+.entrada-links {
+    display: flex;/* Utiliza Flexbox para alinhar os links */
+    margin-right: 23.55px; /* Empurra os links para a esquerda */
+    
+}
+
+/* Adiciona espaço entre os links de entrada e registro */
+.entrada-links a{
+    
+    color: #17365D; /* Botão branco no Entrar e registrar */
+    text-decoration: none; /* Remove sublinhado */
+    margin-left: 45px; 
+    font-weight: bold; /* Define o peso da fonte como negrito */
+
+   
+}
+
+/* Ajusta o posicionamento do contêiner dos links de entrada e registro */
+.navbar > .entrada-links {
+    margin-left: 0; /* Remove o espaço extra à esquerda do contêiner */
+}
+
+
+
+.logo img {
+    max-height: 50px; /* Altura máxima da logo */
+}
+
+/* Estilo da navegação principal */
+.nav-menu li {
+    margin: 0 20px; /* Espaçamento horizontal entre os itens */
+}
