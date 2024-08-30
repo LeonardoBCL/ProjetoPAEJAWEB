@@ -1,9 +1,12 @@
+/*Aqui é o BODY do site, o corpo em si. Mexa aqui para alterar
+algo sobre o site, como o fundo por exemplo.*/
 body {
     background-color: #DFECFF;
     margin: 0;
     padding: 0;
 }
 
+/* CSS da Barra de navegação em si. Altere aqui para alterar algo sobre a barra */
 .navbar{
     margin-top: 40px; /*Dimensões da barra */
     margin-left: 160px; /*Dimensões da barra */
@@ -13,11 +16,12 @@ body {
     align-items: center; /* Alinha verticalmente os itens no centro */
     background-color: #333; /* Cor de fundo da barra de navegação */
     padding: 10px 20px; /* Espaçamento interno da barra */
-    background-color: #BAD8FF /* Cor da barra de
+    background-color: #BAD8FF; /* Cor da barra de
      navegação */
-
+    border-radius: 15px 15px; /* Código para arredondar a borda da barra*/
 }
-
+/*Posicionamento da lista ul (Cursos, suporte, etc ). Se alterar
+algo aqui, irá mexer no posicionamento dessa lista.*/
 .nav-menu ul {
     display: flex; /* Exibe itens de lista em linha */
     list-style-type: none; /* Remove marcadores dos itens da lista */
@@ -26,15 +30,18 @@ body {
     justify-content: center; /* Centraliza os itens horizontalmente dentro da nav-menu */
     margin-left: 37px; 
 }
-
+/*Cor do texto da lista ( Contatos, Suporte, Cursos ). Se alterar
+algo aqui, irá alterar a cor do texto, ou fonte, etc desses 3 citados*/
 .nav-menu a{
 
-    color: #17365D ; /* Cor do texto dos links na navegação */
+    color: #eeeff0 ; /* Cor do texto dos links na navegação */
     text-decoration: none; /*Remove sublinhado */
     font-weight: bold; /* Define o peso da fonte como negrito */
+    text-shadow: 2px 2px 4px rgb(168, 168, 168);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Estilo dos links de entrada e registro */
+/* Estilo e posicionamento de entrada e registro na barra */
 .entrada-links {
     display: flex;/* Utiliza Flexbox para alinhar os links */
     margin-right: 23.55px; /* Empurra os links para a esquerda */
@@ -44,12 +51,12 @@ body {
 /* Adiciona espaço entre os links de entrada e registro */
 .entrada-links a{
     
-    color: #17365D; /* Botão branco no Entrar e registrar */
+    color: #eeeff0; /* Botão branco no Entrar e registrar */
     text-decoration: none; /* Remove sublinhado */
     margin-left: 45px; 
     font-weight: bold; /* Define o peso da fonte como negrito */
-
-   
+    text-shadow: 2px 2px 4px rgb(168, 168, 168);
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Ajusta o posicionamento do contêiner dos links de entrada e registro */
