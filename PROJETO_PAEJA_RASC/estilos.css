@@ -1,9 +1,12 @@
 /*Aqui é o BODY do site, o corpo em si. Mexa aqui para alterar
 algo sobre o site, como o fundo por exemplo.*/
-body {
+html, body {
     background-color: #DFECFF;
     margin: 0;
     padding: 0;
+    width: 100%;
+    max-width: 100%vw;
+    height: 100%;
 }
 
 /* CSS da Barra de navegação em si. Altere aqui para alterar algo sobre a barra */
@@ -85,4 +88,93 @@ algo aqui, irá alterar a cor do texto, ou fonte, etc desses 3 citados*/
 /* Estilo da navegação principal */
 .nav-menu li {
     margin: 0 20px; /* Espaçamento horizontal entre os itens */
+}
+
+/* Consultas de mídia para dispositivos menores */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 10px; /* Ajusta o padding para se ajustar ao tamanho fixo */
+    }
+
+    .nav-menu ul {
+        flex-direction: row; /* Mantém os itens da lista horizontalmente */
+        white-space: nowrap; /* Impede a quebra de linha automática */
+        overflow-x: auto; /* Permite rolagem horizontal se necessário */
+    }
+
+    .entrada-links {
+        margin-top: 10px; /* Adiciona espaço acima dos links */
+    }
+
+    .entrada-links a {
+        margin-left: 15px; /* Ajusta a margem esquerda para se ajustar melhor */
+        padding: 5px 10px; /* Ajusta o padding dos links */
+    }
+}
+
+/* Consultas de mídia para tablets em orientação vertical e dispositivos menores */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Mantém o padding fixo */
+    }
+
+    .nav-menu ul {
+        flex-direction: column; /* Empilha a lista verticalmente */
+        overflow: hidden; /* Oculta qualquer conteúdo que exceda o contêiner */
+        display: none; /* Oculta a lista por padrão */
+    }
+
+    .nav-menu.show {
+        display: flex; /* Mostra a lista quando ativada */
+    }
+
+    .nav-menu li {
+        margin: 10px 0; /* Adiciona espaço vertical entre os itens */
+    }
+
+    .entrada-links {
+        flex-direction: column; /* Empilha os links verticalmente */
+        align-items: center; /* Centraliza os itens */
+        margin-top: 10px;
+    }
+
+    .entrada-links a {
+        margin-left: 0; /* Remove a margem esquerda */
+        margin-bottom: 10px; /* Adiciona espaço entre os links */
+    }
+}
+
+/* Consultas de mídia para dispositivos muito pequenos, como telefones */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px; /* Reduz o padding */
+    }
+
+    .logo img {
+        max-height: 40px; /* Reduz a altura da logo */
+    }
+
+    .nav-menu ul {
+        flex-direction: column; /* Empilha a lista verticalmente */
+        display: none; /* Oculta a lista por padrão */
+    }
+
+    .nav-menu.show {
+        display: flex; /* Mostra a lista quando ativada */
+    }
+
+    .nav-menu li {
+        margin: 5px 0; /* Reduz o espaço entre os itens */
+    }
+
+    .entrada-links {
+        flex-direction: column; /* Empilha os links verticalmente */
+        align-items: center; /* Centraliza os itens */
+        margin-top: 5px;
+    }
+
+    .entrada-links a {
+        margin-left: 0; /* Remove a margem esquerda */
+        margin-bottom: 5px; /* Reduz o espaço entre os links */
+    }
 }
