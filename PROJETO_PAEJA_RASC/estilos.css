@@ -94,7 +94,7 @@ algo aqui, irá alterar a cor do texto, ou fonte, etc desses 3 citados*/
 .imagem-conteiner {
     position: relative; /* Permite que elementos filhos sejam posicionados de forma absoluta em relação a este contêiner */
     width: 90vw; /* Define a largura do contêiner como 90% da largura da viewport (tela). Ajusta o tamanho para ser um pouco menor que a largura total da tela */
-    height: 514.40px; /* Define a altura do contêiner como 514.40 pixels */
+    height: 700px; /* Define a altura do contêiner como 514.40 pixels */
     margin: 59px auto 0; /* Define uma margem superior de 59px e centraliza horizontalmente o contêiner (margem automática nos lados esquerdo e direito) */
     display: flex; /* Define o contêiner como um elemento flexível, o que permite o alinhamento flexível de seus filhos */
     overflow: hidden; /* Garante que qualquer conteúdo que ultrapasse os limites do contêiner não seja exibido */
@@ -157,6 +157,99 @@ algo aqui, irá alterar a cor do texto, ou fonte, etc desses 3 citados*/
     border-bottom-left-radius: 150px; /* Adiciona um arredondamento de 150 pixels ao canto inferior esquerdo da imagem */
     box-shadow: 0 0 15px 5px rgba(81, 174, 202, 0.5); /* Adiciona uma sombra ao redor da imagem com 15 pixels de desfoque e 5 pixels de expansão, com uma cor azul clara e opacidade de 0.5 */
 }
+
+
+/* --------------------------------ESTILIZAÇÃO DA SECTION - 2 ( INÍCIO ) -------------------------- */
+
+
+.o-que-aprender-sec-2 {
+    text-align: center; /* Alinha o conteúdo ao centro */
+    margin: 20px auto; /* Espaçamento acima e abaixo da seção, centraliza horizontalmente */
+    margin-top:150px;
+}
+
+.o-que-aprender-sec-2 h3 {
+    font-family: monospace; /* Fonte monospace */
+    font-size: 25px; /* Tamanho da fonte em pixels */
+    margin: 20px 0; /* Espaço acima e abaixo do título */
+    color: #031836; /* Cor do texto */
+    position: relative; /* Necessário para posicionar a borda */
+    display: inline-block; /* Faz com que o título se comporte como um bloco em linha */
+    padding: 0 20px; /* Espaço interno ao redor do texto */
+    
+}
+
+/* Adiciona linhas contínuas antes e depois do texto */
+.o-que-aprender-sec-2 h3::before,
+.o-que-aprender-sec-2 h3::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 2px; /* Altura da linha contínua */
+    background-color: black; /* Cor da linha contínua */
+    transform: translateY(-50%); /* Centraliza verticalmente em relação ao texto */
+}
+
+.o-que-aprender-sec-2 h3::before {
+    left: -75%; /* Linha à esquerda do texto */
+    width: 75%; /* Largura da linha antes do texto */
+}
+
+.o-que-aprender-sec-2 h3::after {
+    right: -75%; /* Linha à direita do texto */
+    width: 75%; /* Largura da linha depois do texto */
+}
+
+/* Parte dos ( NÚMEROS - PASSO A PASSO ) da SECTION2*/
+.numeros-da-sec-2 {
+    display: flex; /* Usado para alinhar os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 300px; /* Espaçamento entre os números */
+    margin: 0 auto; /* Centraliza a div horizontalmente se necessário */
+    padding: 20px 0; /* Espaço acima e abaixo da div */
+}
+
+/* Estilo para os números */
+.numeros-da-sec-2 h3 {
+    font-family: 'Mplus1p', sans-serif; /* Fonte Mplus1p */
+    font-weight: 800; /* Extrabold */
+    font-size: 250px; /* Tamanho da fonte em pixels */
+    margin: 0; /* Remove margens padrão */
+    text-align: center; /* Centraliza o texto dentro do h3 */
+}
+
+/* Estilos específicos para cada número */
+.numero1 {
+    color: rgba(10, 207, 131, 0.5); /* Verde com opacidade de 50% */
+}
+
+.numero2 {
+    color: rgba(255, 101, 101, 0.5); /* Verde com opacidade de 50% */
+}
+
+.numero3 {
+    color: rgba(10, 102, 194, 0.5); /* Azul com opacidade de 50% */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Consultas de mídia para dispositivos menores */
