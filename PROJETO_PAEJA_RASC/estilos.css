@@ -1,7 +1,7 @@
 /*Aqui é o BODY do site, o corpo em si. Mexa aqui para alterar
 algo sobre o site, como o fundo por exemplo.*/
 html, body {
-    background-color: #DFECFF;
+    background-color: #E9E7E3;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -176,7 +176,6 @@ algo aqui, irá alterar a cor do texto, ou fonte, etc desses 3 citados*/
     position: relative; /* Necessário para posicionar a borda */
     display: inline-block; /* Faz com que o título se comporte como um bloco em linha */
     padding: 0 20px; /* Espaço interno ao redor do texto */
-    
 }
 
 /* Adiciona linhas contínuas antes e depois do texto */
@@ -201,50 +200,118 @@ algo aqui, irá alterar a cor do texto, ou fonte, etc desses 3 citados*/
 }
 
 /* Parte dos ( NÚMEROS - PASSO A PASSO ) da SECTION2*/
-.numeros-da-sec-2 {
-    display: flex; /* Usado para alinhar os itens horizontalmente */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Alinha os itens verticalmente */
-    gap: 300px; /* Espaçamento entre os números */
-    margin: 0 auto; /* Centraliza a div horizontalmente se necessário */
-    padding: 20px 0; /* Espaço acima e abaixo da div */
+
+/* Estilo para o contêiner redondo que envolve cada número */
+.numero-redondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Faz o contêiner ser redondo */
+    background-color: #e0dede; /* Cor de fundo da esfera */
+    width: 260px; /* Tamanho fixo do contêiner redondo */
+    height: 270px; /* Tamanho fixo do contêiner redondo */
+    position: relative; /* Para posicionamento dos números dentro */
+    margin: 0; /* Remove margens */
+    box-shadow: 0 0 40px rgba(76, 76, 76, 0.3); 
+    
 }
 
 /* Estilo para os números */
-.numeros-da-sec-2 h3 {
+/* Estilo para o contêiner que agrupa números e descrições */
+.numeros-e-paragrafos {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    gap: 230px; /* Espaçamento entre os grupos de números e parágrafos */
+    padding: 20px 0; /* Espaço acima e abaixo da div */
+}
+
+/* Estilo para cada grupo de número e descrição */
+.numero-e-descricao {
+    display: flex;
+    flex-direction: column; /* Alinha número e descrição verticalmente */
+    align-items: center; /* Centraliza o número e descrição horizontalmente */
+    text-align: center; /* Centraliza o texto do parágrafo */
+}
+
+/* Estilo para o contêiner redondo que envolve cada número */
+.numero-redondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Faz o contêiner ser redondo */
+    background-color: #f0f0f0; /* Cor de fundo da esfera */
+    width: 270px; /* Tamanho fixo do contêiner redondo */
+    height: 272px; /* Tamanho fixo do contêiner redondo */
+    position: relative; /* Para posicionamento dos números dentro */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra expansiva e suave */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para os números dentro do contêiner redondo */
+.numero-redondo h3 {
     font-family: 'Mplus1p', sans-serif; /* Fonte Mplus1p */
     font-weight: 800; /* Extrabold */
-    font-size: 250px; /* Tamanho da fonte em pixels */
+    font-size: 230px; /* Tamanho da fonte ajustado para caber dentro da esfera */
     margin: 0; /* Remove margens padrão */
-    text-align: center; /* Centraliza o texto dentro do h3 */
+    color: inherit; /* Faz com que a cor do número herde a cor do contêiner */
 }
 
 /* Estilos específicos para cada número */
-.numero1 {
+.numero1 h3 {
     color: rgba(10, 207, 131, 0.5); /* Verde com opacidade de 50% */
 }
 
-.numero2 {
-    color: rgba(255, 101, 101, 0.5); /* Verde com opacidade de 50% */
+.numero2 h3 {
+    color: rgba(255, 101, 101, 0.5); /* Vermelho com opacidade de 50% */
 }
 
-.numero3 {
+.numero3 h3 {
     color: rgba(10, 102, 194, 0.5); /* Azul com opacidade de 50% */
 }
 
+/* Estilo para os parágrafos abaixo dos números */
+.descricao {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Fonte Montserrat */
+    font-weight: 700; /* Negrito */
+    color: #031836; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte ajustável */
+    margin: 40px 0 0; /* Margem superior para separar do número */
+    max-width: 320px; /* Limita a largura máxima do parágrafo */
+    
+}
+
+
+.section2-botao-aluno {
+   
+    display: inline-block;
+    padding: 20px 60px; /* Espaçamento interno do botão */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Fonte Montserrat */
+    font-weight: 700; /* Negrito */
+    color: #ffffff; /* Cor do texto */
+    background-color: #06377E; /* Cor de fundo do botão */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 16px; /* Bordas arredondadas */
+    box-shadow: 3px 4px 2px rgba(0, 0, 0, 0.4); /* Aumenta a sombra para torná-la mais aparente */
+    
+    margin: 40px 0; /* Margem superior para separar do conteúdo acima */
+    
+}
+
+.link-aluno-section {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    align-items: center; /* Alinha o botão verticalmente */
+    padding: 20px 0; /* Espaço acima e abaixo do botão */
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* Efeito de hover para o botão de ser aluno */
+.section2-botao-aluno:hover {
+    background-color: #020452; /* Cor de fundo ao passar o mouse */
+}
 
 
 
