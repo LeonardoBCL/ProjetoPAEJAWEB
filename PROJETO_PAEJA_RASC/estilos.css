@@ -18,7 +18,7 @@ html, body {
     justify-content: space-between; /* Espaça os itens igualmente entre os extremos */
     align-items: center; /* Alinha verticalmente os itens no centro */
     background-color: #333; /* Cor de fundo da barra de navegação */
-    padding: 10px 20px; /* Espaçamento interno da barra */
+    padding: 15px 20px; /* Espaçamento interno da barra */
     background-color: #BAD8FF; /* Cor da barra de
      navegação */
     border-radius: 15px 15px; /* Código para arredondar a borda da barra*/
@@ -310,16 +310,117 @@ algo aqui, irá alterar a cor do texto, ou fonte, etc desses 3 citados*/
 
 /* Efeito de hover para o botão de ser aluno */
 .section2-botao-aluno:hover {
-    background-color: #020452; /* Cor de fundo ao passar o mouse */
+    background-color: #0056b3;; /* Cor de fundo ao passar o mouse */
+}
+
+
+/*Section 3 Estilização */
+/* Estilo para a seção "Nossos cursos" */
+.titulos-nossos-cursos {
+    text-align: center; /* Alinha o conteúdo ao centro */
+    margin: 20px auto; /* Espaçamento acima e abaixo da seção, centraliza horizontalmente */
+    margin-top: 150px; /* Espaço superior específico */
+}
+
+.titulos-nossos-cursos h3 {
+    font-family: monospace; /* Fonte monospace */
+    font-size: 25px; /* Tamanho da fonte em pixels */
+    margin: 20px 0; /* Espaço acima e abaixo do título */
+    color: #031836; /* Cor do texto */
+    position: relative; /* Necessário para posicionar a borda */
+    display: inline-block; /* Faz com que o título se comporte como um bloco em linha */
+    padding: 0 20px; /* Espaço interno ao redor do texto */
+}
+
+/* Adiciona linhas contínuas antes e depois do texto na seção "Nossos cursos" */
+.titulos-nossos-cursos h3::before,
+.titulos-nossos-cursos h3::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Posiciona verticalmente no meio */
+    height: 2px; /* Altura da linha contínua */
+    background-color: black; /* Cor da linha contínua */
+    transform: translateY(-50%); /* Centraliza verticalmente em relação ao texto */
+}
+
+/* Ajuste de largura para garantir que a linha fique igual à da seção anterior */
+.titulos-nossos-cursos h3::before {
+    left: -75%; /* Linha à esquerda do texto */
+    width: 75%; /* Largura da linha antes do texto ajustada para manter proporção */
+}
+
+.titulos-nossos-cursos h3::after {
+    right: -75%; /* Linha à direita do texto */
+    width: 75%; /* Largura da linha depois do texto ajustada para manter proporção */
+}
+/* Parte dos CARDS SESSÃO 3 --------------------------- */
+
+/* Parte dos CARDS SESSÃO 3 --------------------------- */
+
+.container {
+    display: flex; /* Usa flexbox para organizar os cards em linha */
+    justify-content: space-around; /* Espaço entre os cards */
+    flex-wrap: wrap; /* Permite que os cards se movam para a próxima linha em telas menores */
+    margin: 20px; /* Margem externa do contêiner */
+}
+
+.card {
+    background-color: rgba(110, 173, 255, 0.2); /* Cor de fundo do card com 20% de opacidade */
+    border: 1px solid #ccc; /* Borda do card */
+    border-radius: 8px; /* Cantos arredondados */
+    width: 406.13px; /* Largura do card */
+    height: 534.19px; /* Altura do card */
+    margin: 10px; /* Margem entre os cards */
+    padding: 15px; /* Espaço interno do card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra do card */
+    transition: transform 0.3s; /* Animação suave ao passar o mouse */
+    display: flex; /* Permite uma organização flexível */
+    flex-direction: column; /* Organiza os elementos em coluna */
+}
+
+.card img {
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    border-radius: 8px 8px 0 0; /* Arredondamento no topo da imagem */
+}
+
+.card h2 {
+    font-size: 1.5em; /* Tamanho da fonte do título */
+    margin: 10px 0; /* Margem acima e abaixo do título */
+}
+
+.card ul {
+    padding-left: 20px; /* Mantém os pontos visíveis com um recuo */
+    margin: 15px 0; /* Margem acima e abaixo da lista */
+    flex-grow: 1; /* Faz a lista crescer para ocupar o espaço restante */
+}
+
+.card ul li {
+    margin: 5px 0; /* Margem entre os itens da lista */
+}
+
+.saber-mais {
+    display: inline-block; /* Permite o uso de margens e padding */
+    margin-top: 15px; /* Espaço acima do botão */
+    padding: 10px 15px; /* Padding interno do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    text-decoration: none; /* Remove sublinhado do link */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    text-align: center; /* Centraliza o texto do botão */
+}
+
+.saber-mais:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
 }
 
 
 
-
-
-
-
 /* Consultas de mídia para dispositivos menores */
+@media (max-width: 768px) {
+    .card {
+        width: 80%; /* Aumenta a largura do card em telas menores */
+    }
+}
 @media (max-width: 1024px) {
     .navbar {
         padding: 10px; /* Ajusta o padding para se ajustar ao tamanho fixo */
